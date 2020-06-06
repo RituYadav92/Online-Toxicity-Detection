@@ -14,7 +14,7 @@ Project **Apollo** consist of a series of projects that are aimed at using Deep 
 
 ## How to run
 
-1. Clone the repo: ``` git clone https://github.com/kumar-shridhar/Online-Toxicity-Detection.git``` 
+1. Clone the repo: ``` git clone https://github.com/RituYadav92/Online-Toxicity-Detection.git``` 
 2. Make sure you have anaconda installed. If not, check [here](https://docs.anaconda.com/anaconda/install/). 
 3. Install all the requirements by creating conda enviornment using yml file: ```conda env create -f environment_{os}.yml``` where ```{os}``` can be ```Windows``` or ```Linux```.
 4. Download saved model from [here](https://drive.google.com/file/d/1RNd4L_zGVrFF_Cl-6KfoHIInMO-5A0e3/view?usp=sharing)
