@@ -16,14 +16,14 @@ Project **Apollo** consist of a series of projects that are aimed at using Deep 
 
 1. Clone the repo: ``` git clone https://github.com/kumar-shridhar/Online-Toxicity-Detection.git``` 
 2. Make sure you have anaconda installed. If not, check [here](https://docs.anaconda.com/anaconda/install/). 
-3. Install all the requirements using conda yaml: ```conda env create -f environment_{os}.yml``` where ```{os}``` can be ```Windows``` or ```Linux```.
+3. Install all the requirements by creating conda enviornment using yml file: ```conda env create -f environment_{os}.yml``` where ```{os}``` can be ```Windows``` or ```Linux```.
 4. Download saved model from [here](https://drive.google.com/file/d/1RNd4L_zGVrFF_Cl-6KfoHIInMO-5A0e3/view?usp=sharing)
 5. Unzip the model and save in ```Online-Toxicity-Detection/apollo/inference``` folder.
 6. Run command: 
     * ``` cd Online-Toxicity-Detection```
     * ``` python apollo/Frontend/app.py```
-7. Go to the link in the console and provide the YouTube URL, and adjust the ```sensitivity``` and ```number of comments```. The results will be displayed in a chart form. 
-8. You can export the ```.csv``` file of the final results by clicking on ```export results```.
+7. Go to the link in the console and enter the YouTube URL. You can adjust the ```sensitivity``` and ```number of comments``` according to your requirement. The results will be displayed in a chart form. 
+8. You can export the ```.csv``` file of the final results by clicking on button ```export results```.
 
 ---------------------------------------------------------------------------------------------------------
 
