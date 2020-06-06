@@ -13,7 +13,7 @@ LOADED_MODEL = None
 TOKENIZER = None
 
 def infer():
-    model = tf.keras.models.load_model(MODEL_PATH )
+    model = tf.keras.models.load_model(MODEL_PATH)
     print(model)
     tokenizer = AutoTokenizer.from_pretrained(MODEL)
 
