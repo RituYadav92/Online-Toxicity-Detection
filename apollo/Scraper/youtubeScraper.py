@@ -33,8 +33,7 @@ def scrapper():
 
     try:
         youtube_id = return_id()
-        output = str(youtube_id) + "_" + str(uuid.uuid1())
-        #         output = args.output
+        output = str(youtube_id) + "_" + str(uuid.uuid1())        
         limit = LIMIT
 
         if not youtube_id or not output:
@@ -47,11 +46,10 @@ def scrapper():
         session = requests.Session()
         session.headers["User-Agent"] = USER_AGENT
         # Get Youtube page with initial comments
-        response = session.get(YOUTUBE_VIDEO_URL.format(youtube_id=youtube_id))
-        # print(response)
+        response = session.get(YOUTUBE_VIDEO_URL.format(youtube_id=youtube_id))        
         html = response.text
+        
         if "og:title" in html:
-
             with io.open(output, "w", encoding="utf8") as fp:
                 sys.stdout.write("Downloaded %d comment(s)\r" % count)
                 sys.stdout.flush()
@@ -70,7 +68,8 @@ def scrapper():
                     if limit and count >= limit:
                         break
             print("\nDone!")
-
+            
+            # convert json file to csv
             output_filename = output + ".csv"
             write_csv(read_json(output), output_filename)
             os.remove(output)
